@@ -1,7 +1,7 @@
 from LZCTrader.lzctrader import LZCTrader
 
 zc = LZCTrader()
-zc.configure(broker_name='backtest',  # 期货券商接口，目前仅'future'一个选项
+zc.configure(broker_name='backtest',  # 期货券商接口，目前有'future'，‘backtest’两个选项
              mode='backtest',  # 模式选择，虚拟为'virtualtrading'，实盘为'realtrading'
              enter_license='s3az29vbx5w3',  # 登录通行证。暂设为此值即可
              backtest_start_time='7/7/2025',
