@@ -1,0 +1,17 @@
+CLASS: 'EAGLEBD'
+
+#interval:策略（generate_signal函数）多久运行一次
+INTERVAL: '5s'
+#策略中所需参数
+PARAMETERS:
+  long_ema_period: 20
+  medium_ema_period: 10
+  short_ema_period: 5
+
+# WATCHLIST: ['rb2510', 'ag2508', 'ao2509']
+WATCHLIST: ['jd2508', 'rb2510', 'ag2508']
+# WATCHLIST: ['cj2509', 'ap2510']
+#剩下没注释的其他参数暂时用不到
+
+
+

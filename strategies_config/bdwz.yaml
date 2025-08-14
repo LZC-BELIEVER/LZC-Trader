@@ -1,0 +1,24 @@
+CLASS: 'BDWZ'
+
+#interval:策略（generate_signal函数）多久运行一次
+INTERVAL: '3s'
+#策略中所需参数
+PARAMETERS:
+  long_ema_period: 20
+  medium_ema_period: 10
+  short_ema_period: 5
+
+# WATCHLIST: ['rb2510', 'ag2508', 'ao2509']
+#WATCHLIST: ['jd2508', 'rb2510', 'ag2508']
+# WATCHLIST: ['cj2509', 'ap2510']
+
+#BACKTESTLIST: ['cu2508', 'pb2508', 'al2508', 'zn2508', 'sn2508', 'ni2508', 'ss2508', 'ao2510', 'fu2509', 'ru2509', 'ag2510']
+#BACKTESTLIST: ['br2508', 'bu2509', 'sp2509', 'rb2510', 'hc2510', 'au2510', 'ag2510', 'wr2510']
+WATCHLIST: ['sn2508', 'ni2508', 'ru2509']
+#WATCHLIST: ['ao2510']
+
+
+#剩下没注释的其他参数暂时用不到
+
+
+
