@@ -30,8 +30,8 @@
 1. 下载PyCharm，并最好准备一个3.12以上的Python环境
 2. 在环境中下载(pip)系统运行所需的所有库文件
 3. 仿照backtest_strategies文件夹下的bdwz.py，写一个属于你自己的策略文件。并仿照strategies_config文件夹下的bdwz.yaml，完成策略的配置文件。注意！策略文件和配置文件的文件名必须完全一致，最好为全部小写。
-4. 在run.py中，配置configue以及set_strategy，配置方法见注释。
-5. 运行run.py
+4. 在run_backtest.py中，配置configue以及set_strategy，配置方法见注释。
+5. 运行run_backtest.py
 6. 支持的交易品种见LZCTrader/tools/instrument_map.yaml
 
 
