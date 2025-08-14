@@ -1,7 +1,7 @@
 from LZCTrader.lzctrader import LZCTrader
 
 zc = LZCTrader()
-zc.configure(broker_name='futures',  # 期货券商接口，目前仅'future'一个选项
+zc.configure(broker_name='futures',  # 期货券商接口，目前有'future',‘backtest’两个选项
              mode='virtualtrading',  # 模式选择，虚拟为'virtualtrading'，实盘为'realtrading'
              enter_license='s3az29vbx5w3',  # 登录通行证。暂设为此值即可
              account='239306',  # 账号。虚拟盘中，为simnow投资者代码
