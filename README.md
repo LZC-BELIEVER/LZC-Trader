@@ -1,3 +1,41 @@
+# LZCTrader User Manual
+
+## Introduction
+- LZCTrader is a trading and backtesting client system designed for quantitative strategy researchers. The system can fetch futures market data and execute automated trading based on custom strategies.
+- The system architecture is based on [AutoTrader](https://github.com/kieran-mackle/AutoTrader). Currently, it only supports multi-futures trading in the Chinese mainland market.
+- Author: LZC from XJTU
+- This is the client-side system; the server-side is supported by Popper Technology (Xi’an).
+
+## File Structure
+- **API**: Broker interface module
+- **brokers**: Broker definition module
+- **LZCTrader**: Main system module
+- **preliminary**: Preliminary strategy module
+- **preliminary_config**: Preliminary strategy configuration module
+- **strategies**: Trading strategy module
+- **strategies_config**: Trading strategy configuration module
+- **run.py**: Script for single execution of the system
+- **day_and_night.py**: Script for scheduled daily trading
+
+## Trading Deployment
+1. Install PyCharm and prepare a Python environment version 3.12 or above.
+2. Install all required libraries using pip in the environment.
+3. Follow the example in the **strategies** folder (example.py) to write your own strategy file. Similarly, follow the **strategies_config** folder (example.yaml) to complete your strategy configuration file. **Note:** The filenames of the strategy and configuration files must match exactly and should preferably be in lowercase.
+4. In **run.py**, configure `configue`, `set_preliminary_select`, and `set_strategy` according to the comments. Then, in **day_and_night.py**, adjust the running path in the `run_strategy()` function as indicated in the comments.
+5. Run **day_and_night.py**.
+6. Supported trading instruments are listed in **LZCTrader/tools/instrument_map.yaml**.
+7. When the server sends the message `'ready'`, it indicates the system is running normally. There is no additional interface; successful orders will display an order number.
+
+## Backtesting Deployment
+1. Install PyCharm and prepare a Python environment version 3.12 or above.
+2. Install all required libraries using pip in the environment.
+3. Follow the **backtest_strategies** folder (bdwz.py) to write your own backtesting strategy file. Similarly, follow the **strategies_config** folder (bdwz.yaml) to complete the configuration file. **Note:** Filenames must match exactly and preferably be lowercase.
+4. In **run_backtest.py**, configure `configue` and `set_strategy` according to the comments.
+5. Run **run_backtest.py**.
+6. Supported trading instruments are listed in **LZCTrader/tools/instrument_map.yaml**.
+
+---
+
 # LZCTrader 使用文档
 
 ## 简介
