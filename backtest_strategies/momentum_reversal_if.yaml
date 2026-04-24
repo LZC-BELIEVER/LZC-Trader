@@ -1,0 +1,8 @@
+CLASS: 'MomentumReversal_IF'
+
+PARAMETERS:
+  long_ema_period: 20
+  medium_ema_period: 10
+  short_ema_period: 5
+
+BACKTESTLIST: ['IF0000']
